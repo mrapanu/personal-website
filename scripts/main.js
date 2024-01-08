@@ -70,7 +70,7 @@
             break;
           case "projects":
             terminalElement.innerHTML +=
-              '<span class="output">TO DO</span><br>';
+              projects;
             break;
           case "ascii_banner":
             terminalElement.innerHTML += ascii_banner;

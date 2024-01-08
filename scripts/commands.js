@@ -140,3 +140,7 @@ dad_jokes = [
 ];
 
 all_jokes = jokes_programming.concat(dad_jokes);
+
+projects = `<span class="output">While many of my projects are either private or not uploaded on GitHub,
+you can still explore some on my <a class="commands"href="https://github.com/mrapanu">GitHub</a> profile, including this website. 
+Stay tuned for more upcoming projects, as I'll be updating my repository soon.</span><br>`;
