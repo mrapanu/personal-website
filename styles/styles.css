@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Courier New", monospace;
+  background-color: rgb(34, 34, 34);
+  color: #56f3e6; /* Green text */
+}
+.commands {
+  color: #ff5c1b;
+  text-shadow: 0 0 7px #ff5c1b;
+}
+
+.commands-descr,
+.output {
+  color: #04eca7;
+  font-weight: bold;
+}
+
+.instructions{
+  color: #56f3e6;
+}
+
+.score {
+  color: #04eca7;
+  font-weight: bold;
+}
+#terminal {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 15px; /* Added left margin */
+  right: 15px; /* Added right margin */
+  width: calc(100% - 30px);
+  height: calc(100% - 20px);
+  overflow: hidden;
+  white-space: pre;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+.blink-animation {
+  animation: blink 2s infinite;
+}
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1; /* Character is visible */
+  }
+  25%,
+  75% {
+    opacity: 0; /* Character is hidden */
+  }
+}
+input {
+  color: #56f3e6;
+  background-color: rgb(34, 34, 34);
+  border: none;
+  outline: none;
+  width: 90%;
+  font-family: "Courier New", monospace;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+p {
+  display: block;
+  color: #56f3e6;
+  line-height: 1.3em;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+span {
+  color: #d49e4c;
+  font-weight: bold;
+}
+strong {
+  color: #ff5c1b;
+}
+
+#game-container {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 15px; /* Added left margin */
+  right: 15px; /* Added right margin */
+
+  height: 45vh;
+  overflow: hidden;
+  background-color: rgb(34, 34, 34);
+}
+
+#road {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-family: "Courier New", monospace;
+  color: #d49e4c;
+}
+
+#motorcycle {
+  position: absolute;
+  left: 150px; /* Adjusted position for the score label */
+  bottom: 8px;
+  white-space: pre;
+  font-family: "Courier New", monospace;
+  color: #04eca7; /* Motorcycle color */
+}
+
+.obstacle {
+  position: absolute;
+  bottom: 24px; /* Position above the road */
+  white-space: pre;
+  font-family: "Courier New", monospace;
+  color: #56f3e6; /* Obstacles color, initial value */
+}
+
+#score {
+  position: absolute;
+  left: 10px; /* Adjusted position to the left */
+  top: 10px;
+  font-family: "Courier New", monospace;
+  font-size: 20px;
+  color: #d49e4c;
+}
