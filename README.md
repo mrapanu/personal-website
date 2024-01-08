@@ -29,6 +29,7 @@ To run the website locally, follow these steps:
 1. Clone the repository: `git clone https://github.com/mrapanu/personal-website.git`
 2. Navigate to the project directory: `cd personal-website`
 3. Open the `index.html` file in your preferred web browser to access the main website. For the game, open `game.html`. The interactive terminal allows users to input commands and explore the content.
+
 Also you can build a docker image and start it.
 ```
 cd personal-website
