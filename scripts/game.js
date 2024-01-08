@@ -67,6 +67,7 @@ const createObstacle = () => {
   gameContainer.appendChild(obstacle);
 
   let obstaclePosition = gameContainer.clientWidth;
+  let obstacleSpeed = getObstacleSpeed();
 
   const moveObstacle = setInterval(() => {
     if (obstaclePosition < 0) {
@@ -75,7 +76,7 @@ const createObstacle = () => {
       score++;
       updateScore();
     } else {
-      obstaclePosition -= 5;
+      obstaclePosition -= obstacleSpeed;
       obstacle.style.left = obstaclePosition + "px";
 
       const motorcycleRect = motorcycle.getBoundingClientRect();
@@ -94,7 +95,22 @@ const createObstacle = () => {
       }
     }
   }, 10);
+
+  // Create the next obstacle at a random interval
+  setTimeout(() => {
+    createObstacle();
+  }, getRandomInterval());
 };
+
+const getObstacleSpeed = () => (
+  score >= 80 ? 18 :  //Max Speed
+  score >= 60 ? 16 :
+  score >= 40 ? 14 :
+  score >= 30 ? 12 :
+  score >= 20 ? 10 :
+  score >= 10 ? 8 :
+  6 // Default speed
+);
 
 const updateScore = () => {
   scoreLabel.innerHTML =
@@ -115,9 +131,13 @@ const getRandomColor = () => {
   return colors[randomIndex];
 };
 
+const getRandomInterval = () => {
+  return Math.floor(Math.random() * (25 - 9 + 1) + 9) * 100;
+};
+
 document.addEventListener("keydown", (event) => {
   if (event.code === "Space") {
-    event.preventDefault(); // Prevent scrolling on space key press
+    event.preventDefault();
     jump();
   } else if (event.code === "Escape") {
     window.location.href = "index.html";
@@ -126,4 +146,4 @@ document.addEventListener("keydown", (event) => {
 
 animateMotorcycle();
 fillRoad();
-setInterval(createObstacle, 2000);
+createObstacle(); 
