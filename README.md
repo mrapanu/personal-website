@@ -30,9 +30,11 @@ To run the website locally, follow these steps:
 2. Navigate to the project directory: `cd personal-website`
 3. Open the `index.html` file in your preferred web browser to access the main website. For the game, open `game.html`. The interactive terminal allows users to input commands and explore the content.
 Also you can build a docker image and start it.
-```cd personal-website
+```
+cd personal-website
 docker build -t personalwebsite .
-docker run --name test -p 8085:80 -it personalwebsite```
+docker run --name test -p 8085:80 -it personalwebsite
+```
 
 ## Commands
 
