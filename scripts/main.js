@@ -66,11 +66,11 @@
             break;
           case "resumee":
             terminalElement.innerHTML +=
-              '<span class="output">TO DO</span>';
+              '<span class="output">TO DO</span><br>';
             break;
           case "projects":
             terminalElement.innerHTML +=
-              '<span class="output">TO DO</span>';
+              '<span class="output">TO DO</span><br>';
             break;
           case "ascii_banner":
             terminalElement.innerHTML += ascii_banner;
