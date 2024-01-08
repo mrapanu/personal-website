@@ -27,12 +27,13 @@ This personal website is designed to provide visitors with a unique and engaging
 To run the website locally, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/mrapanu/personal-website.git`
-2. Navigate to the project directory: `cd cloned-repository`
+2. Navigate to the project directory: `cd personal-website`
 3. Open the `index.html` file in your preferred web browser to access the main website. For the game, open `game.html`. The interactive terminal allows users to input commands and explore the content.
 Also you can build a docker image and start it.
-`cd cloned-repository`
-`docker build -t personalwebsite .`
-`docker run --name test -p 8085:80 -it personalwebsite`
+```cd personal-website
+docker build -t personalwebsite .
+docker run --name test -p 8085:80 -it personalwebsite```
+
 ## Commands
 
 The terminal supports various commands, including but not limited to:
