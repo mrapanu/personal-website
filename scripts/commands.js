@@ -39,7 +39,8 @@ help = [
   '<span class="commands">ascii_banner</span>     <span class="commands-descr">Display the ASCII Banner</span><br>',
 ];
 
-who ='<span class="output">Mihai: system engineer, developer and server savior. Possesses such legendary skills that he can fix server issues with dad jokes.</span><br>';
+who =`<span class="output">Mihai: system engineer, developer, and server savior. 
+Scripting success stories in the digital saga with a blend of expertise, creativity, and a touch of IT magic.</span><br>`;
 
 jokes_programming = [
   '<span class="output" >Why do programmers prefer dark mode?<br>Because light attracts bugs!</span><br>',

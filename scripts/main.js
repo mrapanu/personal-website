@@ -20,7 +20,7 @@
 
         if (hashedPassword === "435b41068e8665513a20070c033b08b9c66e4332") {
           terminalElement.innerHTML +=
-            '<br><span class="output">Correct password! Redirecting...</span><br>';
+            '<br><span class="output">Correct password! Accessing the secret files...</span><br>';
           setTimeout(() => {
             window.open("https://youtu.be/8GxqvnQyaxs", "_blank");
           }, 3000);
@@ -66,7 +66,10 @@
             break;
           case "resumee":
             terminalElement.innerHTML +=
-              '<span class="output">TO DO</span><br>';
+              '<br><span class="output">Opening resumee in a new tab...</span><br>';
+            setTimeout(() => {
+              window.open("https://URL_FOR_CV", "_blank");
+            }, 2000);
             break;
           case "projects":
             terminalElement.innerHTML +=
