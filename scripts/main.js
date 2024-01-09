@@ -66,7 +66,7 @@
             break;
           case "resumee":
             terminalElement.innerHTML +=
-              '<br><span class="output">Opening resumee in a new tab...</span><br>';
+              '<span class="output">Opening resumee in a new tab...</span><br>';
             setTimeout(() => {
               window.open("https://URL_FOR_CV", "_blank");
             }, 2000);
