@@ -43,8 +43,9 @@ The terminal supports various commands, including but not limited to:
 
 - `help`: Display available commands.
 - `who`: Display information about the website owner.
-- `resumee`: View the owner's resume (to be implemented).
-- `projects`: Explore the owner's projects (to be implemented).
+- `resumee`: View the owner's resume.
+- `linkedin`: View the owner's LinkedIn profile.
+- `projects`: Explore the owner's projects.
 - `ascii_banner`: Display an ASCII art banner.
 - `clear`: Clear the terminal screen.
 - `email`: Open an email prompt to contact the owner.
