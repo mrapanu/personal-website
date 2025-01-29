@@ -32,6 +32,7 @@ help = [
   '<span class="commands">resumee</span>          <span class="commands-descr">Check out my resumee.</span><br>',
   '<span class="commands">email</span>            <span class="commands-descr">Don\'t mail me, unless your letter is a secret treasure map.</span><br>',
   '<span class="commands">projects</span>         <span class="commands-descr">View my projects</span><br>',
+  '<span class="commands">linkedin</span>         <span class="commands-descr">Check out my LinkedIn profile</span><br>',
   '<span class="commands">joke</span>             <span class="commands-descr">Tell me a joke. haha! Usage: <span class="commands">joke -p </span> [programming jokes] / <span class="commands">joke -d</span> [dad jokes] / <span class="commands">joke</span> [random]</span><br>',
   '<span class="commands">game</span>             <span class="commands-descr">Play the game!</span><br>',
   '<span class="commands">clear</span>            <span class="commands-descr">Clear the terminal</span><br>',

@@ -71,6 +71,13 @@
               window.open("https://URL_FOR_CV", "_blank");
             }, 2000);
             break;
+          case "linkedin":
+              terminalElement.innerHTML +=
+                '<span class="output">Opening LinkedIn Profile in a new tab...</span><br>';
+              setTimeout(() => {
+                window.open("https://URL_FOR_LINKEDIN_PROFILE", "_blank");
+              }, 2000);
+              break;
           case "projects":
             terminalElement.innerHTML +=
               projects;
@@ -83,8 +90,8 @@
             break;
           case "email":
             terminalElement.innerHTML +=
-              '<span class="output">Opening mail to <strong>"mrapanu@gmail.com"</strong> ...</span><br>';
-            window.location.href = "mailto:mrapanu@gmail.com";
+              '<span class="output">Opening mail to <strong>"your_mail@something.com"</strong> ...</span><br>';
+            window.location.href = "mailto:your_mail@something.com";
             break;
           case "joke":
             displayJoke(all_jokes);
